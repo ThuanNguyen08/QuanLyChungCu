@@ -1,0 +1,78 @@
+﻿@model IEnumerable<QuanLyChungCu.Models.CanHo>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_ManagerLayout";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+    <form asp-controller="Canhoes" asp-action="Index">
+        <p>
+            Nhập số căn hộ: <input type="text" name="SearchString" />
+            <input type="submit" value="Filter" />
+        </p>
+    </form>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SoCanHo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DienTich)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LoaiCanHo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TinhTrang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdDanCu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdHopDong)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoCanHo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DienTich)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiCanHo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TinhTrang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdDanCu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdHopDong)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCanHo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCanHo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCanHo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

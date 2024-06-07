@@ -1,0 +1,61 @@
+﻿@model QuanLyChungCu.Models.HopDong
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_ManagerLayout";
+}
+
+<h1>Edit</h1>
+
+<h4>HopDong</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdHopDong" />
+            <div class="form-group">
+                <label asp-for="IdCanHo" class="control-label"></label>
+                <input asp-for="IdCanHo" class="form-control" />
+                <span asp-validation-for="IdCanHo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdDanCu" class="control-label"></label>
+                <input asp-for="IdDanCu" class="form-control" />
+                <span asp-validation-for="IdDanCu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdNhanVien" class="control-label"></label>
+                <input asp-for="IdNhanVien" class="form-control" />
+                <span asp-validation-for="IdNhanVien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayTao" class="control-label"></label>
+                <input asp-for="NgayTao" class="form-control" />
+                <span asp-validation-for="NgayTao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayBatDau" class="control-label"></label>
+                <input asp-for="NgayBatDau" class="form-control" />
+                <span asp-validation-for="NgayBatDau" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayKetThuc" class="control-label"></label>
+                <input asp-for="NgayKetThuc" class="form-control" />
+                <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

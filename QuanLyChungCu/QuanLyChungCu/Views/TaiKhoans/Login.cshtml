@@ -1,0 +1,26 @@
+﻿@using QuanLyChungCu.Models
+
+@{
+
+}
+
+@model TaiKhoan
+
+<h1 class="text-center">Login</h1>
+
+<form asp-controller="TaiKhoans" asp-action="Login" method="post">
+	<div class="form-group">
+		<label asp-for="TenDangNhap">Tên đăng nhập</label>
+		<input asp-for="TenDangNhap" type="text" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label asp-for="MatKhau">Mật khẩu</label>
+		<input asp-for="MatKhau" type="password" class="form-control" />
+	</div>
+	<button type="submit" class="btn btn-primary">Đăng nhập</button>
+</form>
+
+@if (!string.IsNullOrEmpty(ViewData["ErrorMessage"]?.ToString()))
+{
+	<div class="alert alert-danger">@ViewData["ErrorMessage"]</div>
+}
