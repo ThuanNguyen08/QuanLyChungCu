@@ -5,57 +5,78 @@
     Layout = "_ManagerLayout";
 }
 
-<h1>Create</h1>
-
-<h4>HopDong</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="IdCanHo" class="control-label"></label>
-                <input asp-for="IdCanHo" class="form-control" />
-                <span asp-validation-for="IdCanHo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdDanCu" class="control-label"></label>
-                <input asp-for="IdDanCu" class="form-control" />
-                <span asp-validation-for="IdDanCu" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdNhanVien" class="control-label"></label>
-                <input asp-for="IdNhanVien" class="form-control" />
-                <span asp-validation-for="IdNhanVien" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NgayTao" class="control-label"></label>
-                <input asp-for="NgayTao" class="form-control" />
-                <span asp-validation-for="NgayTao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NgayBatDau" class="control-label"></label>
-                <input asp-for="NgayBatDau" class="form-control" />
-                <span asp-validation-for="NgayBatDau" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NgayKetThuc" class="control-label"></label>
-                <input asp-for="NgayKetThuc" class="form-control" />
-                <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="container mt-4">
+    <h1 class="mb-4">Tạo mới hợp đồng</h1>
+    <div class="card">
+        <div class="card-header">
+            <h4>Thông tin hợp đồng</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group row">
+                    <label asp-for="IdHopDong" class="col-sm-2 col-form-label">ID Hợp đồng</label>
+                    <div class="col-sm-10">
+                        <input asp-for="IdHopDong" class="form-control" />
+                        <span asp-validation-for="IdHopDong" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="IdCanHo" class="col-sm-2 col-form-label">ID Căn hộ</label>
+                    <div class="col-sm-10">
+                        <input asp-for="IdCanHo" class="form-control" />
+                        <span asp-validation-for="IdCanHo" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="IdDanCu" class="col-sm-2 col-form-label">ID Dân cư</label>
+                    <div class="col-sm-10">
+                        <input asp-for="IdDanCu" class="form-control" />
+                        <span asp-validation-for="IdDanCu" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="IdNhanVien" class="col-sm-2 col-form-label">ID Nhân viên</label>
+                    <div class="col-sm-10">
+                        <input asp-for="IdNhanVien" class="form-control" />
+                        <span asp-validation-for="IdNhanVien" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="NgayTao" class="col-sm-2 col-form-label">Ngày tạo</label>
+                    <div class="col-sm-10">
+                        <input asp-for="NgayTao" class="form-control" />
+                        <span asp-validation-for="NgayTao" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="NgayBatDau" class="col-sm-2 col-form-label">Ngày bắt đầu</label>
+                    <div class="col-sm-10">
+                        <input asp-for="NgayBatDau" class="form-control" />
+                        <span asp-validation-for="NgayBatDau" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="NgayKetThuc" class="col-sm-2 col-form-label">Ngày kết thúc</label>
+                    <div class="col-sm-10">
+                        <input asp-for="NgayKetThuc" class="form-control" />
+                        <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="Description" class="col-sm-2 col-form-label">Mô tả</label>
+                    <div class="col-sm-10">
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Tạo</button>
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

@@ -5,37 +5,50 @@
     Layout = "_ManagerLayout";
 }
 
-<h1>Create</h1>
-
-<h4>TaiKhoan</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="TenDangNhap" class="control-label"></label>
-                <input asp-for="TenDangNhap" class="form-control" />
-                <span asp-validation-for="TenDangNhap" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MatKhau" class="control-label"></label>
-                <input asp-for="MatKhau" class="form-control" />
-                <span asp-validation-for="MatKhau" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="VaiTro" class="control-label"></label>
-                <input asp-for="VaiTro" class="form-control" />
-                <span asp-validation-for="VaiTro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="container mt-4">
+    <h1 class="mb-4">Tạo mới tài khoản</h1>
+    <div class="card">
+        <div class="card-header">
+            <h4>Thông tin tài khoản</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group row">
+                    <label asp-for="IdTaiKhoan" class="col-sm-2 col-form-label">Tên đăng nhập</label>
+                    <div class="col-sm-10">
+                        <input asp-for="IdTaiKhoan" class="form-control" />
+                        <span asp-validation-for="IdTaiKhoan" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="TenDangNhap" class="col-sm-2 col-form-label">Tên đăng nhập</label>
+                    <div class="col-sm-10">
+                        <input asp-for="TenDangNhap" class="form-control" />
+                        <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="MatKhau" class="col-sm-2 col-form-label">Mật khẩu</label>
+                    <div class="col-sm-10">
+                        <input asp-for="MatKhau" class="form-control" />
+                        <span asp-validation-for="MatKhau" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="VaiTro" class="col-sm-2 col-form-label">Vai trò</label>
+                    <div class="col-sm-10">
+                        <input asp-for="VaiTro" class="form-control" />
+                        <span asp-validation-for="VaiTro" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

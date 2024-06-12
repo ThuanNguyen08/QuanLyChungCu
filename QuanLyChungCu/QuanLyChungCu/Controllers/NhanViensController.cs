@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using QuanLyChungCu.Data;
 using QuanLyChungCu.Models;
@@ -20,9 +21,51 @@ namespace QuanLyChungCu.Controllers
         }
 
         // GET: NhanViens
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder)
         {
-            return View(await _context.NhanVien.ToListAsync());
+            if (string.IsNullOrEmpty(sortOrder))
+            {
+                sortOrder = "id_asc";
+            }
+            ViewData["IdSortParm"] = sortOrder == "id_asc" ? "id_desc" : "id_asc";
+            ViewData["NameSortParm"] = sortOrder == "name_asc" ? "name_desc" : "name_asc";
+            ViewData["SexSortParm"] = sortOrder == "sex_asc" ? "sex_desc" : "sex_asc";
+            ViewData["DateSortParm"] = sortOrder == "date_asc" ? "date_desc" : "date_asc";
+            ViewData["DateSortParm"] = sortOrder == "date_asc" ? "date_desc" : "date_asc";
+            var nhanviens = from s in _context.NhanVien
+                           select s;
+            switch (sortOrder)
+            {
+                case "id_asc":
+                    nhanviens = nhanviens.OrderBy(s => s.IdNhanVien);
+                    break;
+                case "id_desc":
+                    nhanviens = nhanviens.OrderBy(s => s.IdNhanVien);
+                    break;
+                case "name_asc":
+                    nhanviens = nhanviens.OrderBy(s => s.TenNhanVien);
+                    break;
+                case "name_desc":
+                    nhanviens = nhanviens.OrderByDescending(s => s.TenNhanVien);
+                    break;
+                case "sex_asc":
+                    nhanviens = nhanviens.OrderBy(s => s.GioiTinh);
+                    break;
+                case "sex_desc":
+                    nhanviens = nhanviens.OrderByDescending(s => s.GioiTinh);
+                    break;
+                case "date_asc":
+                    nhanviens = nhanviens.OrderBy(s => s.NgaySinh);
+                    break;
+                case "date_desc":
+                    nhanviens = nhanviens.OrderByDescending(s => s.NgaySinh);
+                    break;
+                default:
+                    nhanviens = nhanviens.OrderBy(s => s.TenNhanVien);
+                    break;
+            }
+
+            return View(await nhanviens.AsNoTracking().ToListAsync());
         }
 
         // GET: NhanViens/Details/5

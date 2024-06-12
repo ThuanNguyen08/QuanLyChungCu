@@ -1,78 +1,40 @@
 ﻿@model IEnumerable<QuanLyChungCu.Models.CanHo>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Danh sách căn hộ";
     Layout = "_ManagerLayout";
 }
 
-<h1>Index</h1>
+<div class="container mt-4">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-    <form asp-controller="Canhoes" asp-action="Index">
-        <p>
-            Nhập số căn hộ: <input type="text" name="SearchString" />
-            <input type="submit" value="Filter" />
-        </p>
-    </form>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.SoCanHo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tang)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DienTich)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LoaiCanHo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TinhTrang)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdDanCu)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdHopDong)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoCanHo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tang)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DienTich)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LoaiCanHo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TinhTrang)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdDanCu)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdHopDong)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCanHo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCanHo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCanHo">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="d-flex justify-content-between mb-4">
+        <a class="btn btn-primary" asp-action="Create">Tạo mới căn hộ</a>
+        <form asp-controller="Canhoes" asp-action="Index" class="form-inline">
+            <div class="form-group mb-2">
+                <label for="SearchString" class="sr-only">Nhập số căn hộ</label>
+                <input type="text" class="form-control" id="SearchString" name="SearchString" placeholder="Nhập số căn hộ" />
+            </div>
+            <button type="submit" class="btn btn-secondary mb-2 ml-2">Lọc</button>
+        </form>
+    </div>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Căn hộ: @item.SoCanHo</h5>
+                        <p class="card-text">Tình trạng: @item.TinhTrang</p>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.IdCanHo">Sửa</a>
+                            <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.IdCanHo">Chi tiết</a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.IdCanHo">Xóa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4+W2VKNaelIbnDsmSENGHmYBHeae/xE4jSmw3gnpBMZayzYo3YmeOmuOGtA4demkVJG59olTxShs6fAUuc28Sw==",
+  "dgSpecHash": "te+ZAjE9ApA1gXGjX2zDbaFtmgG6Qfgb5DbvuQ8WHMp3esQSiHZwT3FA+U4gonMeBJGMg+ZysTjvMf2AZtW7fA==",
   "success": true,
   "projectFilePath": "D:\\QLCHUNGCU\\QuanLyChungCu\\QuanLyChungCu\\QuanLyChungCu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cntt4\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\cntt4\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\cntt4\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\cntt4\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\cntt4\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\cntt4\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

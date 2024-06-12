@@ -1,12 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using QuanLyChungCu.Data;
 namespace QuanLyChungCu.Controllers
 {
 	public class ManagerController : Controller
 	{
-		public IActionResult Index()
+        private readonly QuanLyChungCuContext _context;
+
+		public ManagerController(QuanLyChungCuContext context)
 		{
-			return View();
+			_context = context;
 		}
-	}
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
 }

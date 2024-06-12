@@ -34,8 +34,7 @@ namespace QuanLyChungCu.Controllers
 				return RedirectToAction("Index", "Manager");
 			}
 		}
-
-		public IActionResult Login()
+        public IActionResult Login()
 		{
 			return View();
 		}
@@ -54,8 +53,12 @@ namespace QuanLyChungCu.Controllers
 					HttpContext.Session.SetString("TenDangNhap", u.TenDangNhap.ToString());
 					return RedirectToAction("Index", "Manager");
 				}
-				return View("LoginFaild");
-			}
+                else
+                {
+                    ViewData["ErrorMessage"] = "Tên đăng nhập hoặc mật khẩu không đúng.";
+                    return View(tk);
+                }
+            }
 			else
 			{
 				return RedirectToAction("Index", "Manager");
@@ -66,7 +69,11 @@ namespace QuanLyChungCu.Controllers
 		[HttpPost]
         public IActionResult Logout()
         {
-            HttpContext.Session.Clear();
+            if (!string.IsNullOrEmpty(HttpContext.Session.GetString("accname")))
+            {
+                HttpContext.Session.SetString("accname", "");
+                return RedirectToAction("Login", "TaiKhoans");
+            }
             return RedirectToAction("Login", "TaiKhoans");
         }
 

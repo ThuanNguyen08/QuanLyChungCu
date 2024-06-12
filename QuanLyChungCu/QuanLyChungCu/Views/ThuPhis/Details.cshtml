@@ -5,69 +5,109 @@
     Layout = "_ManagerLayout";
 }
 
-<h1>Details</h1>
+<style>
+    .container {
+        margin-top: 50px;
+    }
 
-<div>
-    <h4>ThuPhi</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdDanCu)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdDanCu)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ThoiGian)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ThoiGian)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhiQuanLy)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhiQuanLy)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhiDien)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhiDien)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhiNuoc)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhiNuoc)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhiDichVu)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhiDichVu)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhiGuiXe)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhiGuiXe)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NgayTao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NgayTao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TrangThai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TrangThai)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdThuPhi">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    .details-container {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+        .details-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .details-container dl dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .details-container dl dd {
+            margin-bottom: 10px;
+        }
+
+        .details-container a {
+            margin-right: 10px;
+        }
+</style>
+
+<div class="container">
+    <div class="details-container">
+        <h1>Details</h1>
+
+        <div>
+            <h4>Thu Phí</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.IdThuPhi)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.IdThuPhi)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.IdDanCu)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.IdDanCu)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.ThoiGian)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.ThoiGian)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PhiQuanLy)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PhiQuanLy)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PhiDien)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PhiDien)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PhiNuoc)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PhiNuoc)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PhiDichVu)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PhiDichVu)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PhiGuiXe)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PhiGuiXe)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NgayTao)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NgayTao)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TrangThai)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TrangThai)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.IdThuPhi" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
 </div>

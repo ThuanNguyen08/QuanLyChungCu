@@ -71,6 +71,7 @@ namespace QuanLyChungCu.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 _context.Add(canHo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

@@ -5,45 +5,85 @@
     Layout = "_ManagerLayout";
 }
 
-<h1>Details</h1>
+<style>
+    .container {
+        margin-top: 50px;
+    }
 
-<div>
-    <h4>SuCo</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdCanHo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdCanHo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MoTaSuCo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MoTaSuCo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NgayBaoCao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NgayBaoCao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TrangThai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TrangThai)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdNhanVien)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdNhanVien)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    .details-container {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+        .details-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .details-container dl dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .details-container dl dd {
+            margin-bottom: 10px;
+        }
+
+        .details-container a {
+            margin-right: 10px;
+        }
+</style>
+
+<div class="container">
+    <div class="details-container">
+        <h1>Details</h1>
+
+        <div>
+            <h4>Sự Cố</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Id)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.IdCanHo)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.IdCanHo)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.MoTaSuCo)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.MoTaSuCo)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NgayBaoCao)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NgayBaoCao)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TrangThai)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TrangThai)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.IdNhanVien)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.IdNhanVien)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
 </div>

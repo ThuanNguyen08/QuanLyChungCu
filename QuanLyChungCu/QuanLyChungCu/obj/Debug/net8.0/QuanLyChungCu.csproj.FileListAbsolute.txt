@@ -250,3 +250,4 @@ D:\QLCHUNGCU\QuanLyChungCu\QuanLyChungCu\obj\Debug\net8.0\refint\QuanLyChungCu.d
 D:\QLCHUNGCU\QuanLyChungCu\QuanLyChungCu\obj\Debug\net8.0\QuanLyChungCu.pdb
 D:\QLCHUNGCU\QuanLyChungCu\QuanLyChungCu\obj\Debug\net8.0\QuanLyChungCu.genruntimeconfig.cache
 D:\QLCHUNGCU\QuanLyChungCu\QuanLyChungCu\obj\Debug\net8.0\ref\QuanLyChungCu.dll
+D:\QLCHUNGCU\QuanLyChungCu\QuanLyChungCu\obj\Debug\net8.0\QuanLyChungCu.sourcelink.json

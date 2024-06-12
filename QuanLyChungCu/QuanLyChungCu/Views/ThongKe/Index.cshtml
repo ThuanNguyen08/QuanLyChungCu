@@ -1,0 +1,49 @@
+﻿@model IEnumerable<dynamic>
+@{
+    Layout = "_ManagerLayout";
+    ViewData["Title"] = "Thống kê";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thống kê doanh số</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+    <script>
+        // Lấy dữ liệu từ ViewBag và chuyển đổi thành mảng JavaScript
+        var labels = @Html.Raw(Json.Serialize(ViewBag.Labels));
+        var data = @Html.Raw(Json.Serialize(ViewBag.Data));
+
+        // Tạo biểu đồ
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Doanh số theo thời gian',
+                    data: data,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

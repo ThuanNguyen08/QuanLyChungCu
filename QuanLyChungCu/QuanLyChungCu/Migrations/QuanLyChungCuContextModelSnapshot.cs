@@ -20,15 +20,12 @@ namespace QuanLyChungCu.Migrations
                 .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("QuanLyChungCu.Models.CanHo", b =>
                 {
                     b.Property<int>("IdCanHo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCanHo"));
 
                     b.Property<string>("DienTich")
                         .IsRequired()
@@ -67,7 +64,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdDanCu"));
 
                     b.Property<string>("DiaChi")
                         .IsRequired()
@@ -110,7 +106,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdHopDong"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -145,7 +140,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdNhanVien"));
 
                     b.Property<string>("DiaChi")
                         .IsRequired()
@@ -184,7 +178,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("IdCanHo")
                         .HasColumnType("int");
@@ -214,7 +207,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTaiKhoan"));
 
                     b.Property<string>("MatKhau")
                         .IsRequired()
@@ -239,7 +231,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("IdNguoiGui")
                         .HasColumnType("int");
@@ -270,7 +261,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdThuPhi"));
 
                     b.Property<int>("IdDanCu")
                         .HasColumnType("int");
@@ -312,7 +302,6 @@ namespace QuanLyChungCu.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("GioMoCua")
                         .HasColumnType("datetime2");
