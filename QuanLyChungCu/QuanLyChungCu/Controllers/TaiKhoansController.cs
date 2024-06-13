@@ -43,14 +43,14 @@ namespace QuanLyChungCu.Controllers
 		public async Task<IActionResult> Login(TaiKhoan tk)
 		{
 
-			if (HttpContext.Session.GetString("TenDangNhap") == null)
+			if (HttpContext.Session.GetString("Id") == null)
 			{
 				var u = _context.TaiKhoan
 								.Where(x => x.TenDangNhap.Equals(tk.TenDangNhap) && x.MatKhau.Equals(tk.MatKhau))
 								.FirstOrDefault();
 				if (u != null)
 				{
-					HttpContext.Session.SetString("TenDangNhap", u.TenDangNhap.ToString());
+					HttpContext.Session.SetString("Id", u.TenDangNhap.ToString());
 					return RedirectToAction("Index", "Manager");
 				}
                 else
