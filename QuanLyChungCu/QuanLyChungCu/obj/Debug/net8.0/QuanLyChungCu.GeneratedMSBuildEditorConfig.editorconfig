@@ -17,243 +17,247 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuanLyChungCu
 build_property.RootNamespace = QuanLyChungCu
-build_property.ProjectDir = D:\QLCHUNGCU\QuanLyChungCu\QuanLyChungCu\
+build_property.ProjectDir = C:\Users\acer\source\repos\QLCC\QuanLyChungCu\QuanLyChungCu\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\QLCHUNGCU\QuanLyChungCu\QuanLyChungCu
+build_property.MSBuildProjectDirectory = C:\Users\acer\source\repos\QLCC\QuanLyChungCu\QuanLyChungCu
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/CanHoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuQ3VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuQ3VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuQ3VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuQ3VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/DanCus/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuQ3VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Home/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/DanCu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuQ3VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Home/Privacy.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9wRG9uZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9wRG9uZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9wRG9uZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9wRG9uZ3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/HopDongs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9wRG9uZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Manager/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Manager/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/NhanViens/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Shared/Error.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Shared/_ManagerLayout.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Shared/_DanCuLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYW5DdUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Shared/_ManagerLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYW5hZ2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Shared/_StaffLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdGFmZkxheW91dC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Staff/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Staff/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VDb2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VDb2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VDb2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VDb2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/SuCoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VDb2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Login.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TaiKhoans/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdCYW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdCYW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdCYW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdCYW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThongBaos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdCYW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThongKe/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThongKe/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1UGhpc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1UGhpc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1UGhpc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1UGhpc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/ThuPhis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1UGhpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Create.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbkljaGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Delete.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbkljaGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Details.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbkljaGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Edit.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbkljaGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Index.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/TienIches/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbkljaGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/_ViewImports.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/_ViewStart.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/QLCHUNGCU/QuanLyChungCu/QuanLyChungCu/Views/Shared/_Layout.cshtml]
+[C:/Users/acer/source/repos/QLCC/QuanLyChungCu/QuanLyChungCu/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6yxxn6b5j9
