@@ -8165,19 +8165,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cntt4\\.nuget\\packages\\": {}
+    "C:\\Users\\acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\QLCHUNGCU\\QuanLyChungCu\\QuanLyChungCu\\QuanLyChungCu.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Source\\Repos\\QLCC\\QuanLyChungCu\\QuanLyChungCu\\QuanLyChungCu.csproj",
       "projectName": "QuanLyChungCu",
-      "projectPath": "D:\\QLCHUNGCU\\QuanLyChungCu\\QuanLyChungCu\\QuanLyChungCu.csproj",
-      "packagesPath": "C:\\Users\\cntt4\\.nuget\\packages\\",
-      "outputPath": "D:\\QLCHUNGCU\\QuanLyChungCu\\QuanLyChungCu\\obj\\",
+      "projectPath": "C:\\Users\\acer\\Source\\Repos\\QLCC\\QuanLyChungCu\\QuanLyChungCu\\QuanLyChungCu.csproj",
+      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\acer\\Source\\Repos\\QLCC\\QuanLyChungCu\\QuanLyChungCu\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cntt4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

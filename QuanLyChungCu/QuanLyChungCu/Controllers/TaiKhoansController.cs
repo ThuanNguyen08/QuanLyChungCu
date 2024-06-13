@@ -39,45 +39,57 @@ namespace QuanLyChungCu.Controllers
 			return View();
 		}
 
-		[HttpPost]
-		public async Task<IActionResult> Login(TaiKhoan tk)
-		{
+        [HttpPost]
+        public async Task<IActionResult> Login(TaiKhoan tk)
+        {
+            if (HttpContext.Session.GetInt32("IdTaiKhoan") == null)
+            {
+                var u = await _context.TaiKhoan
+                                     .Where(x => x.TenDangNhap.Equals(tk.TenDangNhap) && x.MatKhau.Equals(tk.MatKhau))
+                                     .FirstOrDefaultAsync();
 
-			if (HttpContext.Session.GetString("TenDangNhap") == null)
-			{
-				var u = _context.TaiKhoan
-								.Where(x => x.TenDangNhap.Equals(tk.TenDangNhap) && x.MatKhau.Equals(tk.MatKhau))
-								.FirstOrDefault();
-				if (u != null)
-				{
-					HttpContext.Session.SetString("TenDangNhap", u.TenDangNhap.ToString());
-					return RedirectToAction("Index", "Manager");
-				}
+                if (u != null)
+                {
+                    HttpContext.Session.SetInt32("IdTaiKhoan", u.IdTaiKhoan);
+                    HttpContext.Session.SetString("VaiTro", u.VaiTro);
+
+                    // Điều hướng dựa trên vai trò
+                    if (u.VaiTro == "quan ly")
+                    {
+                        return RedirectToAction("Index", "Manager");
+                    }
+                    else if (u.VaiTro == "dan cu")
+                    {
+                        return RedirectToAction("Index", "DanCu");
+                    }
+                    else
+                    {
+                        // Vai trò không xác định, điều hướng về trang mặc định hoặc thông báo lỗi
+                        ViewData["ErrorMessage"] = "Vai trò không hợp lệ.";
+                        return View(tk);
+                    }
+                }
                 else
                 {
                     ViewData["ErrorMessage"] = "Tên đăng nhập hoặc mật khẩu không đúng.";
                     return View(tk);
                 }
             }
-			else
-			{
-				return RedirectToAction("Index", "Manager");
-			}
+            else
+            {
+                return RedirectToAction("Index", "DanCu");
+            }
         }
 
-
-		[HttpPost]
+        [HttpPost]
         public IActionResult Logout()
         {
-            if (!string.IsNullOrEmpty(HttpContext.Session.GetString("accname")))
-            {
-                HttpContext.Session.SetString("accname", "");
-                return RedirectToAction("Login", "TaiKhoans");
-            }
+            // Clear the session
+            HttpContext.Session.Clear();
+
+            // Redirect to the login page
             return RedirectToAction("Login", "TaiKhoans");
         }
-
-
 
         // GET: TaiKhoans/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -119,30 +131,41 @@ namespace QuanLyChungCu.Controllers
             return View(taiKhoan);
         }
 
-        // GET: TaiKhoans/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // GET: TaiKhoans/Edit
+        public async Task<IActionResult> Edit()
         {
-            if (id == null)
+            // Retrieve the Id from the session
+            var userId = HttpContext.Session.GetInt32("IdTaiKhoan");
+
+            // Check if the session Id is null
+            if (userId == null)
             {
-                return NotFound();
+                return RedirectToAction("Login", "TaiKhoans");
             }
 
-            var taiKhoan = await _context.TaiKhoan.FindAsync(id);
+            // Fetch the user record from the database based on the session Id
+            var taiKhoan = await _context.TaiKhoan.FirstOrDefaultAsync(x => x.IdTaiKhoan == userId);
+
+            // Check if the user record exists
             if (taiKhoan == null)
             {
                 return NotFound();
             }
+
+            // Return the Edit view with the user data
             return View(taiKhoan);
         }
 
-        // POST: TaiKhoans/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: TaiKhoans/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTaiKhoan,TenDangNhap,MatKhau,VaiTro")] TaiKhoan taiKhoan)
+        public async Task<IActionResult> Edit([Bind("IdTaiKhoan,TenDangNhap,MatKhau,VaiTro")] TaiKhoan taiKhoan)
         {
-            if (id != taiKhoan.IdTaiKhoan)
+            // Retrieve the Id from the session
+            var userId = HttpContext.Session.GetInt32("IdTaiKhoan");
+
+            // Check if the session Id is null
+            if (userId == null || userId != taiKhoan.IdTaiKhoan)
             {
                 return NotFound();
             }
@@ -169,6 +192,8 @@ namespace QuanLyChungCu.Controllers
             }
             return View(taiKhoan);
         }
+
+
 
         // GET: TaiKhoans/Delete/5
         public async Task<IActionResult> Delete(int? id)
