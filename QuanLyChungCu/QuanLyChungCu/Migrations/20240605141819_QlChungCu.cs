@@ -11,7 +11,21 @@ namespace QuanLyChungCu.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+			migrationBuilder.CreateTable(
+	                name: "TaiKhoan",
+	                columns: table => new
+	                {
+		                IdTaiKhoan = table.Column<int>(type: "int", nullable: false),
+		                TenDangNhap = table.Column<string>(type: "nvarchar(max)", nullable: false),
+		                MatKhau = table.Column<string>(type: "nvarchar(max)", nullable: false),
+		                VaiTro = table.Column<string>(type: "nvarchar(max)", nullable: false)
+	                },
+	                constraints: table =>
+	                {
+		                table.PrimaryKey("PK_TaiKhoan", x => x.IdTaiKhoan);
+	                });
+
+			migrationBuilder.CreateTable(
                 name: "DanCu",
                 columns: table => new
                 {
@@ -23,12 +37,19 @@ namespace QuanLyChungCu.Migrations
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DiaChi = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     VaiTro = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IdCanHo = table.Column<int>(type: "int", nullable: false)
-                },
+                    IdCanHo = table.Column<int>(type: "int", nullable: false),
+					IdTaiKhoan = table.Column<int>(type: "int", nullable: false)
+				},
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_DanCu", x => x.IdDanCu);
-                });
+					table.ForeignKey(
+					   name: "FK_DanCu_TaiKhoan_IdTaiKhoan",
+					   column: x => x.IdTaiKhoan,
+					   principalTable: "TaiKhoan",
+					   principalColumn: "IdTaiKhoan",
+					   onDelete: ReferentialAction.Cascade);
+				});
 
             migrationBuilder.CreateTable(
                 name: "HopDong",
@@ -110,19 +131,7 @@ namespace QuanLyChungCu.Migrations
                     table.PrimaryKey("PK_SuCo", x => x.Id);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "TaiKhoan",
-                columns: table => new
-                {
-                    IdTaiKhoan = table.Column<int>(type: "int", nullable: false),
-                    TenDangNhap = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MatKhau = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    VaiTro = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TaiKhoan", x => x.IdTaiKhoan);
-                });
+
 
             migrationBuilder.CreateTable(
                 name: "NhanVien",

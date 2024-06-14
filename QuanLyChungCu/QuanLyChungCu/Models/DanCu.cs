@@ -31,5 +31,6 @@ namespace QuanLyChungCu.Models
         [Required]
         [Display(Name = "Id căn hộ")]
         public int IdCanHo {  get; set; }
+        public int IdTaiKhoan { get; set; }
     }
 }
